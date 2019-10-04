@@ -9,6 +9,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        findViewById<TextView>(R.id.hello_text).text = createApplicationScreenMessage()
+        findViewById<TextView>(R.id.hello_text).text = helloMacoun()
     }
 }
