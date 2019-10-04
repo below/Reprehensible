@@ -1,3 +1,6 @@
+import co.touchlab.kotlinxcodesync.SyncExtension
+import co.touchlab.kotlinxcodesync.SyncTask
+
 buildscript {
     repositories {
         jcenter()
@@ -14,11 +17,9 @@ buildscript {
 plugins {
     kotlin("multiplatform")
     id("org.jetbrains.kotlin.native.cocoapods")
-    "co.touchlab.kotlinxcodesync"
 }
 
-repositories {
-}
+apply(plugin = "co.touchlab.kotlinxcodesync")
 
 kotlin {
     jvm ("android")
@@ -46,7 +47,7 @@ kotlin {
     }
 }
 
-xcode {
-    projectPath = "../../iosApp/iosApp.xcodeproj"
-    target = "iosApp"
+configure<SyncExtension> {
+    projectPath = "../../Reprehensible_iOS/Reprehensible.xcodeproj"
+    target = "Reprehensible"
 }

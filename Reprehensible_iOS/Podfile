@@ -7,5 +7,5 @@ target 'Reprehensible' do
 
   # Pods for Reprehensible
 
-    pod 'MacounLib', :path => '/Users/below/dev/macoun/2019/Reprehensible/Reprehensible_Android/MacounLib'
+    pod 'MacounLib', :path => '../Reprehensible_Android/MacounLib'
 end
