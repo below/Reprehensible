@@ -27,8 +27,4 @@ kotlin {
         summary = "Macoun Sample Lib"
         homepage = "www.macoun.de"
     }
-
-    sourceSets["commonMain"].dependencies {
-        implementation("org.jetbrains.kotlin:kotlin-stdlib-common")
-    }
 }
