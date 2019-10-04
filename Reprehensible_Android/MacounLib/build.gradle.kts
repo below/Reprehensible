@@ -1,6 +1,23 @@
+buildscript {
+    repositories {
+        jcenter()
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+
+    dependencies {
+        classpath("co.touchlab:kotlinxcodesync:0.1.5")
+    }
+}
+
 plugins {
     kotlin("multiplatform")
     id("org.jetbrains.kotlin.native.cocoapods")
+    "co.touchlab.kotlinxcodesync"
+}
+
+repositories {
 }
 
 kotlin {
@@ -27,4 +44,9 @@ kotlin {
         summary = "Macoun Sample Lib"
         homepage = "www.macoun.de"
     }
+}
+
+xcode {
+    projectPath = "../../iosApp/iosApp.xcodeproj"
+    target = "iosApp"
 }
