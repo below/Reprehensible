@@ -24,6 +24,10 @@ kotlin {
         implementation("org.jetbrains.kotlin:kotlin-stdlib-common")
     }
 
+    sourceSets["androidMain"].dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib")
+    }
+
     cocoapods {
         // Configure fields required by CocoaPods.
         summary = "Macoun Sample Lib"

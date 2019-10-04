@@ -1,5 +1,8 @@
 package com.vonbelow.reprehensible
 
+expect fun platformSpecific(): String
+
 fun helloMacoun(): String {
-    return "Good evening Macoun!"
+    val spec = platformSpecific()
+    return "Good evening ${spec}"
 }
