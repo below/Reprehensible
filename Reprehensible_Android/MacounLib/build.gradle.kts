@@ -3,10 +3,6 @@ plugins {
     id("org.jetbrains.kotlin.native.cocoapods")
 }
 
-kotlin {
-    jvm ("android")
-}
-
 version = "1.0"
 
 kotlin {
@@ -20,6 +16,12 @@ kotlin {
         sourceSets["iOS32Main"].dependsOn(iOSMain)
     } else {
         iosX64("iOS")
+    }
+
+    jvm ("android")
+
+    sourceSets["commonMain"].dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-common")
     }
 
     cocoapods {

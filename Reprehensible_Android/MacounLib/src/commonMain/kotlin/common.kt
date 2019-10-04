@@ -1,5 +1,5 @@
 package com.vonbelow.reprehensible
 
 fun helloMacoun(): String {
-    return "Hello Macoun!"
+    return "Good evening Macoun!"
 }
