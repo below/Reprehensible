@@ -1,0 +1,16 @@
+PODS:
+  - MacounLib (1.0)
+
+DEPENDENCIES:
+  - MacounLib (from `/Users/below/dev/macoun/2019/Reprehensible/Reprehensible_Android/MacounLib`)
+
+EXTERNAL SOURCES:
+  MacounLib:
+    :path: "/Users/below/dev/macoun/2019/Reprehensible/Reprehensible_Android/MacounLib"
+
+SPEC CHECKSUMS:
+  MacounLib: 63d6f7686a61a577b209a6abc2106c159678e467
+
+PODFILE CHECKSUM: 5f2288ad452262c89d4b34ad2a33e679d13ec0fb
+
+COCOAPODS: 1.7.5

@@ -1,0 +1,11 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Reprehensible' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Reprehensible
+
+    pod 'MacounLib', :path => '/Users/below/dev/macoun/2019/Reprehensible/Reprehensible_Android/MacounLib'
+end
