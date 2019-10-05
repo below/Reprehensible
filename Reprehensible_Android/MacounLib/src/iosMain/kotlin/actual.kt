@@ -1,5 +1,5 @@
 package com.vonbelow.reprehensible
 
-actual fun platformName(): String {
+actual fun platformSpecific(): String {
     return "iOS"
 }
