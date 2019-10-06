@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MacounLib-android-1.0">
+    <output-path>$PROJECT_DIR$/MacounLib/build/libs</output-path>
+    <root id="archive" name="MacounLib-android-1.0.jar">
+      <element id="module-output" name="MacounLib_androidMain" />
+    </root>
+  </artifact>
+</component>

@@ -15,6 +15,10 @@ kotlin {
         implementation("org.jetbrains.kotlin:kotlin-stdlib-common")
     }
 
+    sourceSets["androidMain"].dependencies {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib")
+    }
+
     val buildForDevice = project.findProperty("kotlin.native.cocoapods.target") == "ios_arm"
     if (buildForDevice) {
         iosArm64("iOS64")
