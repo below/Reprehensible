@@ -1,4 +1,12 @@
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
+import co.touchlab.kotlinxcodesync.SyncExtension
+
+buildscript {
+    dependencies {
+        classpath("co.touchlab:kotlinxcodesync:0.1.5")
+    }
+}
+apply(plugin = "co.touchlab.kotlinxcodesync")
 
 plugins {
     kotlin("multiplatform")
@@ -36,4 +44,10 @@ kotlin {
         summary = "Macoun Sample Lib"
         homepage = "www.macoun.de"
     }
+
+    configure<SyncExtension> {
+        projectPath = "../../Reprehensible_iOS/Reprehensible.xcodeproj"
+        target = "Reprehensible"
+    }
+
 }
