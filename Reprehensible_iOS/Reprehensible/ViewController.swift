@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MacounLib
 
 class ViewController: UIViewController {
 
@@ -18,7 +19,7 @@ class ViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.helloLabel.text = "Hello Macoun!"
+        self.helloLabel.text = CommonKt.helloMacoun()
     }
 }
 
