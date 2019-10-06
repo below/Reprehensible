@@ -1,7 +1,20 @@
+import co.touchlab.kotlinxcodesync.SyncExtension
+
+buildscript {
+    repositories {
+//        mavenCentral()
+    }
+
+    dependencies {
+        classpath("co.touchlab:kotlinxcodesync:0.1.5")
+    }
+}
+
 plugins {
     kotlin("multiplatform")
     id("org.jetbrains.kotlin.native.cocoapods")
 }
+apply(plugin = "co.touchlab.kotlinxcodesync")
 
 version = "1.0"
 
@@ -32,5 +45,10 @@ kotlin {
         // Configure fields required by CocoaPods.
         summary = "Macoun Sample Lib"
         homepage = "www.macoun.de"
+    }
+
+    configure<SyncExtension> {
+        projectPath = "../../Reprehensible_iOS/Reprehensible.xcodeproj"
+        target = "Reprehensible"
     }
 }

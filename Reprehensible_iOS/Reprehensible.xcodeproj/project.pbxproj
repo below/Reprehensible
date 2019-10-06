@@ -16,8 +16,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06FA9F6BB534220416E9DF7A /* common.kt */ = {isa = PBXFileReference; includeInIndex = 1; name = common.kt; path = ../Reprehensible_Android/MacounLib/src/commonMain/kotlin/common.kt; sourceTree = "<group>"; };
 		37B432B4FD440C713E1E16FC /* Pods-Reprehensible.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reprehensible.debug.xcconfig"; path = "Target Support Files/Pods-Reprehensible/Pods-Reprehensible.debug.xcconfig"; sourceTree = "<group>"; };
+		7BCB7B1A72DFD24B3F85374D /* actual.kt */ = {isa = PBXFileReference; includeInIndex = 1; name = actual.kt; path = ../Reprehensible_Android/MacounLib/src/androidMain/kotlin/actual.kt; sourceTree = "<group>"; };
 		82FAB55E70CC384606EBB365 /* Pods_Reprehensible.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reprehensible.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A69A3A411AE8A296ACCAA3AB /* actual.kt */ = {isa = PBXFileReference; includeInIndex = 1; name = actual.kt; path = ../Reprehensible_Android/MacounLib/src/iosMain/kotlin/actual.kt; sourceTree = "<group>"; };
 		A76E9F1A7ABF76AF164B54C8 /* Pods-Reprehensible.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reprehensible.release.xcconfig"; path = "Target Support Files/Pods-Reprehensible/Pods-Reprehensible.release.xcconfig"; sourceTree = "<group>"; };
 		CB2C4A7023460C9B00ED6D3A /* Reprehensible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reprehensible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2C4A7323460C9B00ED6D3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +43,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06F0A1838CB5ABAB7F04E9C4 /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				A69A3A411AE8A296ACCAA3AB /* actual.kt */,
+			);
+			name = kotlin;
+			sourceTree = "<group>";
+		};
+		0C7B2F2DBA48D2C693F0E07B /* Kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				D78FF88287B51BB8B57814B8 /* androidMain */,
+				6049606B768FB173436523C5 /* commonMain */,
+				2209F43DEF580FAFEDDCD1D9 /* iosMain */,
+			);
+			name = Kotlin;
+			sourceTree = "<group>";
+		};
+		2209F43DEF580FAFEDDCD1D9 /* iosMain */ = {
+			isa = PBXGroup;
+			children = (
+				06F0A1838CB5ABAB7F04E9C4 /* kotlin */,
+			);
+			name = iosMain;
+			sourceTree = "<group>";
+		};
 		564974905C3C8E29F8FFA58E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -50,6 +79,30 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		6049606B768FB173436523C5 /* commonMain */ = {
+			isa = PBXGroup;
+			children = (
+				A53C20D6C504D896630DFD5D /* kotlin */,
+			);
+			name = commonMain;
+			sourceTree = "<group>";
+		};
+		A53C20D6C504D896630DFD5D /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				06FA9F6BB534220416E9DF7A /* common.kt */,
+			);
+			name = kotlin;
+			sourceTree = "<group>";
+		};
+		B305BAD5E5AC781F2028D4AE /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				7BCB7B1A72DFD24B3F85374D /* actual.kt */,
+			);
+			name = kotlin;
+			sourceTree = "<group>";
+		};
 		CB2C4A6723460C9B00ED6D3A = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +110,7 @@
 				CB2C4A7123460C9B00ED6D3A /* Products */,
 				564974905C3C8E29F8FFA58E /* Pods */,
 				F91A46B22B2FBD7F13FCD497 /* Frameworks */,
+				0C7B2F2DBA48D2C693F0E07B /* Kotlin */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +133,14 @@
 				CB2C4A7F23460C9F00ED6D3A /* Info.plist */,
 			);
 			path = Reprehensible;
+			sourceTree = "<group>";
+		};
+		D78FF88287B51BB8B57814B8 /* androidMain */ = {
+			isa = PBXGroup;
+			children = (
+				B305BAD5E5AC781F2028D4AE /* kotlin */,
+			);
+			name = androidMain;
 			sourceTree = "<group>";
 		};
 		F91A46B22B2FBD7F13FCD497 /* Frameworks */ = {
